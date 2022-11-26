@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://sanshui.findn.cn/",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "//at.alicdn.com/t/c/font_3794007_jjecp27j67.css",
 
   logo: "/findnotes.svg",
 
@@ -18,20 +18,17 @@ export default hopeTheme({
 
   docsDir: "docs",
 
-  pageInfo: ["Author", "Original", "Date", "ReadingTime"],
+  pageInfo: ["Original", "Date", "ReadingTime", "PageView"],
 
   pure: false,
   
   darkmode: "toggle",
 
-  themeColor: {
-    blue: "#0088cc",
-    red: "#f26d6d",
-    green: "#3eaf7c",
-    orange: "#fb9b5f",
-  },
+  themeColor: false,
 
-  fullscreen: true,
+  fullscreen: false,
+
+  toc: true,
   
   locales: {
     /**
@@ -44,9 +41,11 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: 'Copyright © 2022 三水 | <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">陕ICP备2020013777号-1</a>',
 
       displayFooter: true,
+
+      copyright: false,
 
       // page meta
       metaLocales: {
@@ -55,9 +54,17 @@ export default hopeTheme({
     },
   },
 
+  sidebarIcon: true,
+
+  sidebarSorter: ["readme", "order", "filename", "title"],
+
+  breadcrumb: true,
+
+  titleIcon: false,
+
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"]
+
     },
   },
 
@@ -65,6 +72,10 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
+    components: [
+      "Badge",
+      "BiliBili",
+    ],
     comment: {
       /**
        * Using Giscus
@@ -86,50 +97,44 @@ export default hopeTheme({
        */
       provider: "Waline",
       serverURL: "https://comment.findn.cn/",
+      login: 'enable', 
+      emoji: [
+        '//unpkg.com/@waline/emojis@1.1.0/weibo',
+        '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+      ],
+      requiredMeta:[],
+      pageSize: 10,
+      // reaction: true,
     },
 
     // Disable features you don’t want here
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
+      tasklist: true,
+      tabs: true,
       codetabs: true,
       container: true,
-      demo: true,
-      echarts: true,
-      flowchart: true,
-      gfm: true,
+      footnote: true,
+      katex: true,
+      mark: true,
       imageLazyload: true,
       imageTitle: true,
       imageSize: true,
-      include: true,
-      katex: true,
-      mark: true,
-      mermaid: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
+      gfm: true,
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      vPre: true,
-      vuePlayground: true,
+      demo: false,
+      chart: false,
+      echarts: false,
+      flowchart: false,
+      include: false,
+      mermaid: false,
+      sub: false,
+      sup: false,
+      vPre: false,
+      vuePlayground: false,
     },
 
     pwa: {
@@ -137,6 +142,7 @@ export default hopeTheme({
       cacheHTML: true,
       cachePic: true,
       appendBase: true,
+      update: "available",
       apple: {
         icon: "/assets/icon/findnotes-apple-icon-152.png",
         statusBarColor: "black",
@@ -146,6 +152,7 @@ export default hopeTheme({
         color: "#ffffff",
       },
       manifest: {
+        theme_color: "#23a2a8",
         icons: [
           {
             src: "/assets/icon/findnotes-chrome-mask-512.png",
