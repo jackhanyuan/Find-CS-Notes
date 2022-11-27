@@ -4,6 +4,6 @@ icon: jichu
 index: true
 ---
 
-::: tip LeetCode 计算机基础
+::: tip 计算机基础
 
 :::

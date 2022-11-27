@@ -177,6 +177,7 @@ export default hopeTheme({
       cacheHTML: true,
       cachePic: true,
       appendBase: true,
+      themeColor: "#23a2a8",
       update: "available",
       apple: {
         icon: "/assets/icon/findnotes-apple-icon-152.png",
