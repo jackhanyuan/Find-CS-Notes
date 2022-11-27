@@ -2,3 +2,4 @@
 .temp
 *.log
 node_modules/
+dist/

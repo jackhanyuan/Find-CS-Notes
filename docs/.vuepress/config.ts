@@ -28,7 +28,7 @@ export default defineUserConfig({
           placeholder: "开始搜索",
         },
       },
-      // 为分类和标签和更新时间添加索引
+      // 为分类和标签添加索引
       customFields: [
         {
           name: "category",
@@ -42,13 +42,6 @@ export default defineUserConfig({
           getter: (page) => page.frontmatter.tag,
           formatter: {
             "/": "标签：$content",
-          },
-        },
-        {
-          name: "updateTime",
-          getter: (page) => page.data.git?.updateTime.toLocaleString(),
-          formatter: {
-            "/": "更新时间：$content",
           },
         },
       ],
