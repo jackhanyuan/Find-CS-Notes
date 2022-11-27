@@ -1,4 +1,22 @@
 // place your custom styles here
 :root {
   scroll-behavior: smooth;
+  --waline-theme-color: var(--theme-color) !important;
+  --waline-active-color: var(--theme-color-light) !important;
+}
+
+html[data-theme='dark'] {
+  kbd {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.home .waline-wrapper {
+  --waline-theme-color: var(--c-brand);
+  --waline-text-color: var(--c-text);
+  --waline-active-color: var(--c-brand-light);
+  --waline-border: 1px solid var(--dark-grey);
+  --waline-bgcolor: var(--c-bg);
+  --waline-bgcolor-light: var(--c-bg-light);
 }

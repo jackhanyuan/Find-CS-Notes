@@ -17,6 +17,8 @@ export default hopeTheme({
   repo: "jackhanyuan/Find-CS-Notes",
 
   docsDir: "docs",
+  
+  docsBranch: 'main',
 
   pageInfo: ["Original", "Date", "ReadingTime", "PageView"],
 
@@ -24,9 +26,14 @@ export default hopeTheme({
   
   darkmode: "toggle",
 
-  themeColor: false,
+  themeColor: {
+    blue: "#0088cc",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
+  },
 
-  fullscreen: false,
+  fullscreen: true,
 
   toc: true,
   
@@ -72,10 +79,10 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    components: [
-      "Badge",
-      "BiliBili",
-    ],
+    blog: false,
+	
+	components: ["Badge", "BiliBili", "YouTube"],
+	
     comment: {
       /**
        * Using Giscus
@@ -103,8 +110,20 @@ export default hopeTheme({
         '//unpkg.com/@waline/emojis@1.1.0/bilibili',
       ],
       requiredMeta:[],
+	  pageview: true,
       pageSize: 10,
       // reaction: true,
+	   walineLocales: {
+        '/': {
+          admin: '管理员',
+          level0: '秀才',
+          level1: '举人',
+          level2: '进士',
+          level3: '探花',
+          level4: '榜眼',
+          level5: '状元',
+        },
+      },
     },
 
     // Disable features you don’t want here
@@ -139,20 +158,23 @@ export default hopeTheme({
 
     pwa: {
       favicon: "/favicon.ico",
+	  theme_color: "#23a2a8",
       cacheHTML: true,
       cachePic: true,
       appendBase: true,
       update: "available",
       apple: {
         icon: "/assets/icon/findnotes-apple-icon-152.png",
-        statusBarColor: "black",
+        statusBarColor: 'white',
       },
       msTile: {
         image: "/assets/icon/findnotes-ms-icon-144.png",
         color: "#ffffff",
       },
       manifest: {
-        theme_color: "#23a2a8",
+		name: 'Find Notes',
+        short_name: 'Find Notes',
+        description: '三水的笔记 - 找到CS的乐趣',
         icons: [
           {
             src: "/assets/icon/findnotes-chrome-mask-512.png",
