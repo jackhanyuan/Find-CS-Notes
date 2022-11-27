@@ -1,6 +1,7 @@
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
 import theme from "./theme.js";
+
 
 export default defineUserConfig({
   base: "/",
@@ -16,4 +17,42 @@ export default defineUserConfig({
   theme,
 
   shouldPrefetch: false,
+
+  plugins: [
+    searchProPlugin({
+      // 索引全部内容
+      indexContent: true,
+      locales: {
+        "/": {
+          // 覆盖 placeholder
+          placeholder: "开始搜索",
+        },
+      },
+      // 为分类和标签和更新时间添加索引
+      customFields: [
+        {
+          name: "category",
+          getter: (page) => page.frontmatter.category,
+          formatter: {
+            "/": "分类：$content",
+          },
+        },
+        {
+          name: "tag",
+          getter: (page) => page.frontmatter.tag,
+          formatter: {
+            "/": "标签：$content",
+          },
+        },
+        {
+          name: "updateTime",
+          getter: (page) => page.data.git?.updateTime.toLocaleString(),
+          formatter: {
+            "/": "更新时间：$content",
+          },
+        },
+      ],
+    }),
+  ],
+
 });

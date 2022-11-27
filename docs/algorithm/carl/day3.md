@@ -4,7 +4,8 @@ shortTitle: Day3 链表
 date: 2021-11-22
 order: 3
 prev: day2
-next: 
+next:
+tag: 博客 
 ---
 
 ::: tip 本文目录

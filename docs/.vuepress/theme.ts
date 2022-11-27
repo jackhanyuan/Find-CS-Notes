@@ -16,9 +16,17 @@ export default hopeTheme({
 
   repo: "jackhanyuan/Find-CS-Notes",
 
+  docsRepo: "jackhanyuan/Find-CS-Notes",
+
   docsDir: "docs",
   
   docsBranch: 'main',
+
+  lastUpdated: true,
+
+  contributors: false,
+
+  editLink: true,
 
   pageInfo: ["Original", "Date", "ReadingTime", "PageView"],
 
@@ -28,9 +36,9 @@ export default hopeTheme({
 
   themeColor: {
     blue: "#0088cc",
-    red: "#f26d6d",
     green: "#3eaf7c",
-    orange: "#fb9b5f",
+    orange: "#ed9240",
+    red: "#f26d6d",
   },
 
   fullscreen: true,
@@ -44,6 +52,12 @@ export default hopeTheme({
     "/": {
       // navbar
       navbar: zhNavbar,
+
+      navbarLayout: {
+        left: ["Brand"],
+        center: ["Links"],
+        right: ["Search", "Language", "Repo", "Outlook"],
+      },
 
       // sidebar
       sidebar: zhSidebar,
@@ -80,9 +94,11 @@ export default hopeTheme({
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
     blog: false,
-	
-	components: ["Badge", "BiliBili", "YouTube"],
-	
+  
+    components: ["Badge", "BiliBili", "YouTube"],
+
+    photoSwipe: true,
+
     comment: {
       /**
        * Using Giscus
@@ -110,10 +126,10 @@ export default hopeTheme({
         '//unpkg.com/@waline/emojis@1.1.0/bilibili',
       ],
       requiredMeta:[],
-	  pageview: true,
+      pageview: true,
       pageSize: 10,
       // reaction: true,
-	   walineLocales: {
+      walineLocales: {
         '/': {
           admin: '管理员',
           level0: '秀才',
@@ -158,7 +174,6 @@ export default hopeTheme({
 
     pwa: {
       favicon: "/favicon.ico",
-	  theme_color: "#23a2a8",
       cacheHTML: true,
       cachePic: true,
       appendBase: true,
@@ -172,9 +187,10 @@ export default hopeTheme({
         color: "#ffffff",
       },
       manifest: {
-		name: 'Find Notes',
-        short_name: 'Find Notes',
+        name: 'Find Notes',
+        short_name: '三水的笔记',
         description: '三水的笔记 - 找到CS的乐趣',
+        theme_color: "#23a2a8",
         icons: [
           {
             src: "/assets/icon/findnotes-chrome-mask-512.png",
