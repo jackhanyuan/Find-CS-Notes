@@ -1,7 +1,12 @@
 ---
-title: LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II
+title: Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II
 shortTitle: Day2 数组
-date: 2021-11-19
+date: 2022-11-19
+category:
+  - 算法
+tag:
+  - 代码随想录
+excerpt: '<br>'
 order: 2
 prev: day1
 next: day3

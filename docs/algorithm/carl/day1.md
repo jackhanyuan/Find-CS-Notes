@@ -1,7 +1,12 @@
 ---
-title: LeetCode 704. 二分查找 27. 移除元素
+title: Day1 数组 | LeetCode 704. 二分查找 27. 移除元素
 shortTitle: Day1 数组
-date: 2021-11-16
+date: 2022-11-16
+category:
+  - 算法
+tag:
+  - 代码随想录
+excerpt: '<br>'
 order: 1
 prev: ./
 next: day2

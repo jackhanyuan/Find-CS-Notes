@@ -1,7 +1,12 @@
 ---
-title: LeetCode 203.移除链表元素 707.设计链表 206.反转链表
+title: Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表
 shortTitle: Day3 链表
-date: 2021-11-22
+date: 2022-11-22
+category:
+  - 算法
+tag:
+  - 代码随想录
+excerpt: '<br>'
 order: 3
 prev: day2
 next: 
@@ -36,6 +41,8 @@ next:
 ```
 
 :::
+
+<!-- more -->
 
 ### 思路
 

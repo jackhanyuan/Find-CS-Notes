@@ -12,5 +12,5 @@
 
 为了方便个人知识管理，目前三水有2个博客：
 
-- 三水的个人生活博客 [三水のBlog](https://sanshui.findn.cn/)，主题是[hexo-theme-new-yilia](https://github.com/jackhanyuan/hexo-theme-new-yilia)。
-- 三水的个人学习笔记  [Find Notes](https://findn.cn/)，主题是[vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)。
+- 三水的个人生活博客 [三水のBlog](https://sanshui.findn.cn/)，主题是[hexo-theme-new-yilia](https://github.com/jackhanyuan/hexo-theme-new-yilia)；
+- 三水的个人学习笔记  [Find Notes](https://findn.cn/)，主题是[vuepress-theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope)；
