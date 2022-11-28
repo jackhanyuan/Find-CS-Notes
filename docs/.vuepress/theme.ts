@@ -28,20 +28,13 @@ export default hopeTheme({
 
   editLink: true,
 
-  pageInfo: ["Original", "Date", "ReadingTime", "PageView"],
+  pageInfo: ["Original", "Date", "Category", "ReadingTime", "PageView",],
 
   pure: false,
   
   darkmode: "toggle",
 
-  themeColor: {
-    blue: "#0088cc",
-    green: "#3eaf7c",
-    orange: "#ed9240",
-    red: "#f26d6d",
-  },
-
-  fullscreen: true,
+  fullscreen: false,
 
   toc: true,
   
@@ -89,11 +82,31 @@ export default hopeTheme({
     },
   },
 
+  blog: {
+    name: "Find Notes",
+    description: "三水的笔记 - 找到CS的乐趣",
+    intro: "/",
+    roundAvatar: false,
+    sidebarDisplay: "none",
+    timeline: "...",
+    medias: {
+      Email: "mailto:jackhanyuan@foxmail.com",
+      Github: "https://github.com/jackhanyuan",
+      Rss: "/rss.xml",
+    },
+  },
+
   plugins: {
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    blog: false,
+    
+    // 启用博客 并设置博客插件选项
+    blog: {autoExcerpt: true},
+
+    feed: {
+      rss: true,
+    },
   
     components: ["Badge", "BiliBili", "YouTube"],
 
