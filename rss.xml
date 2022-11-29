@@ -6,8 +6,8 @@
     <link>https://findn.cn/</link>
     <description>三水的笔记 - 找到CS笔记的乐趣</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 28 Nov 2022 12:55:55 GMT</pubDate>
-    <lastBuildDate>Mon, 28 Nov 2022 12:55:55 GMT</lastBuildDate>
+    <pubDate>Tue, 29 Nov 2022 02:35:06 GMT</pubDate>
+    <lastBuildDate>Tue, 29 Nov 2022 02:35:06 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>算法</category>
@@ -562,9 +562,25 @@ linkedList.get(1);            //返回3</p>
 </code></pre><div aria-hidden="true"><div></div><div></div></div></div></template>
 </CodeTabs>
 <h3 id="思路-2" tabindex="-1"> 思路</h3>
+<blockquote>
+<p>双指针遍历链表，依次改变链表的next指针的指向</p>
+</blockquote>
+<ul>
+<li>初始值 <code>pre=None</code>，<code>cur=head</code>，结束条件 <code>cur != None</code></li>
+</ul>
 <h3 id="python代码-2" tabindex="-1"> python代码</h3>
-<div data-ext="py"><pre><code>
-</code></pre><div aria-hidden="true"><div></div></div></div>]]></content:encoded>
+<div data-ext="py"><pre><code><span>class</span> <span>Solution</span><span>:</span>
+    <span>def</span> <span>reverseList</span><span>(</span>self<span>,</span> head<span>:</span> Optional<span>[</span>ListNode<span>]</span><span>)</span> <span>-</span><span>></span> Optional<span>[</span>ListNode<span>]</span><span>:</span>
+        pre <span>=</span> <span>None</span>  <span># 因为链表反转后第一个节点head会指向None，所以pre初始值为None</span>
+        cur <span>=</span> head
+        <span>while</span> cur<span>:</span>  <span># 当cur为None的时候说明链表反转结束，返回pre</span>
+            tmp <span>=</span> cur<span>.</span><span>next</span>  <span># tmp存储cur的下一个节点，防止链表丢失</span>
+            cur<span>.</span><span>next</span> <span>=</span> pre  <span># 先更改cur.next，再向后移动pre和cur指针</span>
+            pre <span>=</span> cur
+            cur <span>=</span> tmp  <span># cur不能指向cur.next，因为cur.next已经改变，所以指向tmp</span>
+        
+        <span>return</span> pre
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
