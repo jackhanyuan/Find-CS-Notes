@@ -24,7 +24,7 @@ export default hopeTheme({
 
   lastUpdated: true,
 
-  contributors: false,
+  contributors: true,
 
   editLink: true,
 
@@ -227,6 +227,27 @@ export default hopeTheme({
             src: "/assets/icon/findnotes-chrome-192.png",
             sizes: "192x192",
             type: "image/png",
+          },
+        ],
+        shortcuts: [
+          {
+            name: "算法",
+            short_name: "algorithm",
+            url: "/algorithm/",
+            icons: [
+              {
+                src: "/assets/icon/algorithm-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/algorithm-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
           },
         ],
       },

@@ -20,3 +20,24 @@ html[data-theme='dark'] {
   --waline-bgcolor: var(--c-bg);
   --waline-bgcolor-light: var(--c-bg-light);
 }
+
+.page-title h1 {
+  font-size: 2.0rem;
+  @media (max-width: 959px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 419px) {
+    font-size: 1.55rem;
+  }
+}
+
+h2 {
+  font-size: 1.65rem;
+  @media (max-width: 959px) {
+    font-size: 1.55rem;
+  }
+  @media (max-width: 419px) {
+    font-size: 1.45rem;
+  }
+}
+
