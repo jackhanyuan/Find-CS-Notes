@@ -188,8 +188,22 @@ class MyLinkedList:
 
 ### 思路
 
+> 双指针遍历链表，依次改变链表的next指针的指向
+
+- 初始值 `pre=None`，`cur=head`，结束条件 `cur != None`
+
 ### python代码
 
 ```python
-
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pre = None  # 因为链表反转后第一个节点head会指向None，所以pre初始值为None
+        cur = head
+        while cur:  # 当cur为None的时候说明链表反转结束，返回pre
+            tmp = cur.next  # tmp存储cur的下一个节点，防止链表丢失
+            cur.next = pre  # 先更改cur.next，再向后移动pre和cur指针
+            pre = cur
+            cur = tmp  # cur不能指向cur.next，因为cur.next已经改变，所以指向tmp
+        
+        return pre
 ```
