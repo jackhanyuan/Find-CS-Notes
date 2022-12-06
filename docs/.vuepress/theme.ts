@@ -37,6 +37,8 @@ export default hopeTheme({
   fullscreen: false,
 
   toc: true,
+
+  hotReload: true,
   
   locales: {
     /**
@@ -166,21 +168,22 @@ export default hopeTheme({
       footnote: true,
       katex: true,
       mark: true,
+      mermaid: true,
+      sub: true,
+      sup: true,
+      figure: true,
       imageLazyload: true,
-      imageTitle: true,
       imageSize: true,
       gfm: true,
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
+      imageMark: false,
       demo: false,
       chart: false,
       echarts: false,
       flowchart: false,
       include: false,
-      mermaid: false,
-      sub: false,
-      sup: false,
       vPre: false,
       vuePlayground: false,
     },
