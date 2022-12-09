@@ -3,6 +3,7 @@ home: true
 icon: shouye
 title: 首页
 index: false
+article: false
 heroImage: /findnotes.svg
 heroText: Find Notes
 tagline: 三水的笔记 - 找到CS的乐趣

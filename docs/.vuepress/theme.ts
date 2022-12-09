@@ -38,7 +38,7 @@ export default hopeTheme({
 
   toc: true,
 
-  hotReload: true,
+  hotReload: false,
   
   locales: {
     /**
@@ -57,7 +57,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: 'Copyright © 2022 三水 | <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">陕ICP备2020013777号-1</a>',
+      footer: function(){var d = new Date(); return 'Copyright © ' + String(d.getFullYear()) + ' 三水 | <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">陕ICP备2020013777号-1</a>'}(),
 
       displayFooter: true,
 
@@ -66,6 +66,25 @@ export default hopeTheme({
       // page meta
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
+        toc: '目录',
+      },
+
+      routeLocales: {
+    
+        /**
+         * 404 页面提示
+         */
+        notFoundMsg: ['404 Not Found', '你似乎来到了没有知识存在的荒原', '师傅，页面被妖怪抓走了...'],
+    
+        /**
+         * 返回主页
+         */
+        home: '返回主页',
+    
+        /**
+         * 返回上一页
+         */
+        back: '返回上一页',
       },
     },
   },
@@ -104,15 +123,27 @@ export default hopeTheme({
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
     
     // 启用博客 并设置博客插件选项
-    blog: {autoExcerpt: true},
+    blog: true,
 
     feed: {
       rss: true,
     },
-  
-    components: ["Badge", "BiliBili", "YouTube"],
 
     photoSwipe: true,
+
+    components: {
+      components: [
+        "Badge",
+        "AudioPlayer",
+        "BiliBili",
+        "VideoPlayer",
+        "YouTube",
+        "FontIcon",
+      ],  
+      rootComponents: {
+        backToTop: 300,
+      },  
+    }, 
 
     comment: {
       /**
@@ -156,6 +187,8 @@ export default hopeTheme({
         },
       },
     },
+
+    copyright: true,
 
     // Disable features you don’t want here
     mdEnhance: {
