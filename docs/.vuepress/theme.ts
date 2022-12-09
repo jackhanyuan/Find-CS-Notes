@@ -71,19 +71,9 @@ export default hopeTheme({
 
       routeLocales: {
     
-        /**
-         * 404 页面提示
-         */
+        // 404 pages
         notFoundMsg: ['404 Not Found', '你似乎来到了没有知识存在的荒原', '师傅，页面被妖怪抓走了...'],
-    
-        /**
-         * 返回主页
-         */
         home: '返回主页',
-    
-        /**
-         * 返回上一页
-         */
         back: '返回上一页',
       },
     },
@@ -273,13 +263,13 @@ export default hopeTheme({
             icons: [
               {
                 src: "/assets/icon/algorithm-maskable.png",
-                sizes: "192x192",
+                sizes: "200x200",
                 purpose: "maskable",
                 type: "image/png",
               },
               {
                 src: "/assets/icon/algorithm-monochrome.png",
-                sizes: "192x192",
+                sizes: "200x200",
                 purpose: "monochrome",
                 type: "image/png",
               },
