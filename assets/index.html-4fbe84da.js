@@ -1,1 +1,0 @@
-import{ac as t,N as c,O as o,V as s,M as e}from"./framework-166984af.js";const n={},a=e("div",{class:"custom-container tip"},[e("p",{class:"custom-container-title"},"计算机基础")],-1);function r(i,_){return c(),o("div",null,[a,s(" more ")])}const m=t(n,[["render",r],["__file","index.html.vue"]]);export{m as default};
