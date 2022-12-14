@@ -1,0 +1,1 @@
+import{ac as t,G as c,H as o,L as s,F as e}from"./framework-ac3591f3.js";const n={},a=e("div",{class:"custom-container tip"},[e("p",{class:"custom-container-title"},"计算机基础")],-1);function r(i,_){return c(),o("div",null,[a,s(" more ")])}const m=t(n,[["render",r],["__file","index.html.vue"]]);export{m as default};
