@@ -1,6 +1,8 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+  // only use sidebar in routes you set
+  "/": false,
 
   "/algorithm/": [
     {
