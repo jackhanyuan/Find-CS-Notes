@@ -174,6 +174,7 @@ export default hopeTheme({
           level3: '探花',
           level4: '榜眼',
           level5: '状元',
+          placeholder: '客官留个言吧(◕ˇ∀ˇ◕)',
         },
       },
     },
