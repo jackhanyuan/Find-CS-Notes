@@ -165,7 +165,7 @@ export default hopeTheme({
       pageview: true,
       pageSize: 10,
       // reaction: true,
-      walineLocales: {
+      locales: {
         '/': {
           admin: '管理员',
           level0: '秀才',
