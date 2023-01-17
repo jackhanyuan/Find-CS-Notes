@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://findn.cn/rss.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <atom:link href="https://findn.cn/rss.xml" rel="self" type="application/rss+xml"/>
@@ -6,10 +6,16 @@
     <link>https://findn.cn/</link>
     <description>三水的笔记 - 找到CS笔记的乐趣</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 11 Jan 2023 05:51:44 GMT</pubDate>
-    <lastBuildDate>Wed, 11 Jan 2023 05:51:44 GMT</lastBuildDate>
+    <pubDate>Tue, 17 Jan 2023 05:35:57 GMT</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2023 05:35:57 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <copyright>Copyright by 三水</copyright>
+    <image>
+      <title>Find Notes</title>
+      <url>https://findn.cn/findnotes.svg</url>
+      <link>https://findn.cn/</link>
+    </image>
     <category>算法</category>
     <item>
       <title>Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</title>
@@ -29,7 +35,36 @@
 </blockquote>
 <p>给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。</p>
 
-]]></content:encoded>
+<!-- more -->
+<h3> 思路</h3>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 19.删除链表的倒数第 N 个结点</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。</p>
+
+<h3> 思路</h3>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 面试题 02.07. 链表相交</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。</p>
+
+<h3> 思路</h3>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 142.环形链表II</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/linked-list-cycle-ii/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给定一个链表的头节点 &nbsp;head&nbsp;，返回链表开始入环的第一个节点。&nbsp;如果链表无环，则返回&nbsp;null。</p>
+<p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表中没有环。<strong>注意：pos 不作为参数进行传递</strong>，仅仅是为了标识链表的实际情况。</p>
+<p><strong>不允许修改</strong>链表。</p>
+
+<h3> 思路</h3>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Day1 数组 | LeetCode 704. 二分查找 27. 移除元素</title>
@@ -87,34 +122,8 @@
 </ul>
 <h3> python代码</h3>
 <p>左闭右闭</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;=</span> right<span class="token punctuation">:</span>
-            mid <span class="token operator">=</span> left <span class="token operator">+</span><span class="token punctuation">(</span><span class="token punctuation">(</span>right <span class="token operator">-</span> left<span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">,</span> mid<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">==</span> target<span class="token punctuation">:</span>
-                <span class="token keyword">return</span> mid
-            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&gt;</span> target<span class="token punctuation">:</span>
-                right <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span> 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>左闭右开</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right<span class="token punctuation">:</span>
-            mid <span class="token operator">=</span> left <span class="token operator">+</span><span class="token punctuation">(</span><span class="token punctuation">(</span>right <span class="token operator">-</span> left<span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">,</span> mid<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">==</span> target<span class="token punctuation">:</span>
-                <span class="token keyword">return</span> mid
-            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&gt;</span> target<span class="token punctuation">:</span>
-                right <span class="token operator">=</span> mid
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span> 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 27. 移除元素</h2>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>左闭右开</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 27. 移除元素</h2>
 <blockquote>
 <p><a href="https://leetcode.cn/problems/remove-element/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
 </blockquote>
@@ -143,41 +152,9 @@
 </ul>
 <h3> python代码</h3>
 <p>暴力解法 - python调库</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">removeElement</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        <span class="token keyword">for</span> num <span class="token keyword">in</span> nums<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>  <span class="token comment"># nums[::-1]相当于生成一个新的迭代器，循环体内remove不影响这里num取数</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
-            <span class="token keyword">if</span> num <span class="token operator">==</span> val<span class="token punctuation">:</span>
-                nums<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token comment"># 删除操作复杂度O(n)</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-        
-        <span class="token keyword">return</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>暴力解法 - 双循环</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">removeElement</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        length <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>  <span class="token comment"># length记录新数组的长度</span>
-        i <span class="token operator">=</span> <span class="token number">0</span>
-        <span class="token keyword">while</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">:</span>  <span class="token comment"># 这里不能用for循环，因为for i in range(length)中，i每次从迭代器中取数，循环体中改变i的值并不能改变下一次for循环中取到的i值</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> val<span class="token punctuation">:</span> <span class="token comment"># 判断是否等于val，相等进入第二重循环，不相等变量i加1继续执行第一重循环</span>
-                <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> length<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                    nums<span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token comment"># 从i之后依次向前移一位</span>
-                length <span class="token operator">-=</span> <span class="token number">1</span>  <span class="token comment"># 逻辑上删除了一个值，数组大小减1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                i <span class="token operator">+=</span> <span class="token number">1</span>
-        
-        <span class="token keyword">return</span> length
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>双指针法（快慢指针）</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">removeElement</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        slow<span class="token punctuation">,</span> fast <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
-        length <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-        <span class="token keyword">while</span> fast <span class="token operator">&lt;</span> length<span class="token punctuation">:</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>fast<span class="token punctuation">]</span> <span class="token operator">!=</span> val<span class="token punctuation">:</span>
-                nums<span class="token punctuation">[</span>slow<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>fast<span class="token punctuation">]</span>
-                slow <span class="token operator">+=</span> <span class="token number">1</span>
-            fast <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> slow
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>暴力解法 - 双循环</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>双指针法（快慢指针）</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</title>
@@ -213,50 +190,8 @@
 </ul>
 <h3> python代码</h3>
 <p>找到正负分界点，然后左右遍历比较</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">sortedSquares</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-        <span class="token comment"># 由于nums有序，所以先找到由负转正的位置i</span>
-        <span class="token keyword">for</span> i<span class="token punctuation">,</span> num <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> num <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>
-                <span class="token keyword">break</span>
-        
-        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># 存储新结果</span>
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> i  <span class="token comment"># 双指针，left指向绝对值最小的负值，right指向最小的正值</span>
-        <span class="token keyword">while</span> left<span class="token operator">&gt;=</span><span class="token number">0</span> <span class="token keyword">and</span> right <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 分别向左向右遍历，并比较大小</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
-                left <span class="token operator">-=</span> <span class="token number">1</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
-                right <span class="token operator">+=</span> <span class="token number">1</span>
-        
-        <span class="token keyword">if</span> left <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>  <span class="token comment"># 当左边遍历结束后，把右边剩下的加入结果</span>
-            <span class="token keyword">while</span> right <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
-                right <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>  <span class="token comment"># 当右边遍历结束后，把左边剩下的加入结果</span>
-            <span class="token keyword">while</span> left <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
-                left <span class="token operator">-=</span> <span class="token number">1</span>
-        
-        <span class="token keyword">return</span> res
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从两边到中间，双指针</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">sortedSquares</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-        i<span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>  <span class="token comment"># 起始位置</span>
-        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>  <span class="token comment"># 存储结果</span>
-        k <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>  <span class="token comment"># 指向res中的位置</span>
-        <span class="token keyword">while</span> i <span class="token operator">&lt;=</span> j<span class="token punctuation">:</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span> <span class="token operator">&gt;</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span>
-                i <span class="token operator">+=</span> <span class="token number">1</span>  <span class="token comment"># i向右移一位</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                res<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span>
-                j <span class="token operator">-=</span> <span class="token number">1</span>  <span class="token comment"># j向左移一位</span>
-            k <span class="token operator">-=</span> <span class="token number">1</span>
-        
-        <span class="token keyword">return</span> res
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 209.长度最小的子数组</h2>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从两边到中间，双指针</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 209.长度最小的子数组</h2>
 <blockquote>
 <p><a href="https://leetcode.cn/problems/minimum-size-subarray-sum/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
 </blockquote>
@@ -280,43 +215,8 @@
 <blockquote>
 <p>暴力解法 - 超时</p>
 </blockquote>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">minSubArrayLen</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        len_window <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment"># 连续子数组的长度</span>
-        length <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-        <span class="token keyword">while</span> len_window <span class="token operator">&lt;=</span> length<span class="token punctuation">:</span> <span class="token comment"># 假设连续子数组大小从1至length依次遍历</span>
-            i<span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> len_window  <span class="token comment"># 指向连续子数组的开始和结尾</span>
-            sum_window <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span>len_window<span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># sum_window 记录长度为len_window的连续子数组的和</span>
-            <span class="token keyword">if</span> sum_window <span class="token operator">&gt;=</span> target<span class="token punctuation">:</span>
-                <span class="token keyword">return</span> len_window
-
-            <span class="token keyword">while</span> j <span class="token operator">&lt;</span> length<span class="token punctuation">:</span>  <span class="token comment"># 连续子数组向右滑动</span>
-                sum_window <span class="token operator">=</span> sum_window <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span>  <span class="token comment"># 记录更新后的和</span>
-                <span class="token keyword">if</span> sum_window <span class="token operator">&gt;=</span> target<span class="token punctuation">:</span>
-                    <span class="token keyword">return</span> len_window
-                i <span class="token operator">+=</span> <span class="token number">1</span>
-                j <span class="token operator">+=</span> <span class="token number">1</span> 
-
-            len_window <span class="token operator">+=</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token number">0</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>双指针（可变滑动窗口）</p>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">minSubArrayLen</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-        i<span class="token punctuation">,</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>  <span class="token comment"># i和j分别为滑动窗口起始位置和终止位置</span>
-        sum_window <span class="token operator">=</span> <span class="token number">0</span>  <span class="token comment"># 记录滑动窗口和</span>
-        min_window <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">"inf"</span><span class="token punctuation">)</span>  <span class="token comment"># 记录最小滑动窗口的大小，初始为无穷大</span>
-
-        <span class="token keyword">while</span> j <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            sum_window <span class="token operator">+=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span>  <span class="token comment"># 当窗口和小于target则扩大窗口       </span>
-            j <span class="token operator">+=</span> <span class="token number">1</span>
-
-            <span class="token keyword">while</span> sum_window <span class="token operator">&gt;=</span> target<span class="token punctuation">:</span>  <span class="token comment"># 当窗口和大于等于target则缩小窗口     </span>
-                sum_window <span class="token operator">-=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-                i <span class="token operator">+=</span> <span class="token number">1</span>
-                min_window <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>j<span class="token operator">-</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> min_window<span class="token punctuation">)</span>   <span class="token comment"># 更新最小滑动窗口的大小</span>
-
-        <span class="token keyword">return</span> <span class="token number">0</span> <span class="token keyword">if</span> min_window <span class="token operator">==</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">"inf"</span><span class="token punctuation">)</span> <span class="token keyword">else</span> min_window
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 59.螺旋矩阵II</h2>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>双指针（可变滑动窗口）</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 59.螺旋矩阵II</h2>
 <blockquote>
 <p><a href="https://leetcode.cn/problems/spiral-matrix-ii/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
 </blockquote>
@@ -331,45 +231,7 @@
 <li>每条边的填充都要坚持循环一致的原则，左闭右开或者左开右闭。</li>
 </ul>
 <h3> python代码</h3>
-<div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">generateMatrix</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-        matrix <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> n <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span>
-        startx<span class="token punctuation">,</span> starty <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>  <span class="token comment"># 每圈循环的起始位置</span>
-        loop <span class="token operator">=</span> n <span class="token operator">//</span> <span class="token number">2</span>  <span class="token comment"># 循环的圈数（每圈循环边长会减2）</span>
-        count <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment"># 需要填充的数字</span>
-        offset <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment"># 每圈的偏移量，每次循环右边界收缩一位</span>
-        
-        <span class="token keyword">while</span> loop <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
-            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>starty<span class="token punctuation">,</span> n <span class="token operator">-</span> offset<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 填充上面一条边，从左至右，左闭右开</span>
-                matrix<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> count
-                count <span class="token operator">+=</span> <span class="token number">1</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>startx<span class="token punctuation">,</span> j<span class="token punctuation">)</span>
-            j <span class="token operator">+=</span> <span class="token number">1</span>  <span class="token comment"># j移到下一个位置（最右）</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>startx<span class="token punctuation">,</span> n<span class="token operator">-</span>offset<span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 填充右边一条边，从上至下，上闭下开</span>
-                matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> count
-                count <span class="token operator">+=</span> <span class="token number">1</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span>
-            i <span class="token operator">+=</span> <span class="token number">1</span>  <span class="token comment"># i移到下一个位置（最下）</span>
-            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>j<span class="token punctuation">,</span> starty<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 填充下边一条边，从右至左，右闭左开</span>
-                matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span>count
-                count <span class="token operator">+=</span> <span class="token number">1</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> startx<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 填充左边一条边，从下至上，下闭上开</span>
-                matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">=</span> count
-                count <span class="token operator">+=</span> <span class="token number">1</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> starty<span class="token punctuation">)</span>
-            
-            startx <span class="token operator">+=</span> <span class="token number">1</span>  <span class="token comment"># 一圈循环结束，更新起始位置、偏移量、剩余循环圈数</span>
-            starty <span class="token operator">+=</span> <span class="token number">1</span>
-            offset <span class="token operator">+=</span> <span class="token number">1</span>
-            loop <span class="token operator">-=</span> <span class="token number">1</span>
-        
-        <span class="token keyword">if</span> n <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>  <span class="token comment"># n为奇数时，填充中心点</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span>startx<span class="token punctuation">,</span> starty<span class="token punctuation">,</span> count<span class="token punctuation">)</span>
-            matrix<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">=</span> count
-
-        <span class="token keyword">return</span> matrix
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表</title>
@@ -389,7 +251,63 @@
 </blockquote>
 <p>给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。</p>
 
-]]></content:encoded>
+<!-- more -->
+<h3> 思路</h3>
+<p>在单链表中 删除头结点 和 删除其他结点 的操作方式是不一样（删除其他结点时，都是通过该结点的前一个结点来删除该节点）。</p>
+<blockquote>
+<p>设置虚拟头结点来统一删除操作</p>
+</blockquote>
+<ul>
+<li>这样删除头结点和中间结点就变得统一起来，不用分情况讨论。</li>
+</ul>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 707.设计链表</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/design-linked-list/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>在链表类中实现这些功能：</p>
+<ul>
+<li>get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。</li>
+<li>addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。</li>
+<li>addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。</li>
+<li>addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val  的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。</li>
+<li>deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。</li>
+</ul>
+<div class="hint-container info">
+<p class="hint-container-title">示例：</p>
+<p>MyLinkedList linkedList = new MyLinkedList();
+linkedList.addAtHead(1);
+linkedList.addAtTail(3);
+linkedList.addAtIndex(1,2);   //链表变为1-&gt; 2-&gt; 3
+linkedList.get(1);            //返回2
+linkedList.deleteAtIndex(1);  //现在链表是1-&gt; 3
+linkedList.get(1);            //返回3</p>
+</div>
+<h3> 思路</h3>
+<p>实现单向链表，即每个节点仅存储本身的值和后继节点。除此之外，我们还需要一个虚拟头结点作为头结点，和一个 length 参数保存有效节点数。</p>
+<blockquote>
+<p>单链表实现</p>
+</blockquote>
+<ul>
+<li>初始化一个虚拟头节点，方便链表增删操作</li>
+<li>实现 addAtHead(val) 和addAtTail(val) 时，可以借助 addAtIndex(index, val) 来实现</li>
+</ul>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 206.反转链表</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/reverse-linked-list/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。</p>
+
+<h3> 思路</h3>
+<blockquote>
+<p>双指针遍历链表，依次改变链表的next指针的指向</p>
+</blockquote>
+<ul>
+<li>初始值 <code>pre=None</code>，<code>cur=head</code>，结束条件 <code>cur != None</code></li>
+</ul>
+<h3> python代码</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
