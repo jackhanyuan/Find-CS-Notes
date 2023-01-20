@@ -49,9 +49,9 @@ export default hopeTheme({
       navbar: zhNavbar,
 
       navbarLayout: {
-        left: ["Brand"],
+        start: ["Brand"],
         center: ["Links"],
-        right: ["Search", "Language", "Repo", "Outlook"],
+        end: ["Search", "Language", "Repo", "Outlook"],
       },
 
       // sidebar
