@@ -1,31 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://findn.cn/rss.xsl"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <atom:link href="https://findn.cn/rss.xml" rel="self" type="application/rss+xml"/>
-    <title>Find Notes</title>
-    <link>https://findn.cn/</link>
-    <description>三水的笔记 - 找到CS笔记的乐趣</description>
-    <language>zh-CN</language>
-    <pubDate>Tue, 31 Jan 2023 04:41:08 GMT</pubDate>
-    <lastBuildDate>Tue, 31 Jan 2023 04:41:08 GMT</lastBuildDate>
-    <generator>vuepress-plugin-feed2</generator>
-    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <copyright>Copyright by 三水</copyright>
-    <image>
-      <title>Find Notes</title>
-      <url>https://findn.cn/findnotes.svg</url>
-      <link>https://findn.cn/</link>
-    </image>
-    <category>算法</category>
-    <item>
-      <title>Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</title>
-      <link>https://findn.cn/algorithm/carl/day4.html</link>
-      <guid>https://findn.cn/algorithm/carl/day4.html</guid>
-      <source url="https://findn.cn/rss.xml">Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</source>
-      <description>本文目录 [[toc]] 24.两两交换链表中的节点 力扣题目链接 (https://leetcode.cn/problems/swap-nodes-in-pairs/) 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。 tab:active 示例 1： tab 示例 ...</description>
-      <category>算法</category>
-      <pubDate>Tue, 29 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://findn.cn/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+  <id>https://findn.cn/</id>
+  <title>Find Notes</title>
+  <subtitle>三水的笔记 - 找到CS笔记的乐趣</subtitle>
+  <author>
+    <name>三水</name>
+    <uri>https://sanshui.findn.cn/</uri>
+  </author>
+  <logo>https://findn.cn/findnotes.svg</logo>
+  <rights>Copyright by 三水</rights>
+  <updated>2023-01-31T04:41:08.025Z</updated>
+  <generator>vuepress-plugin-feed2</generator>
+  <link rel="self" href="https://findn.cn/atom.xml"/>
+  <link rel="alternate" href="https://findn.cn/"/>
+  <category term="算法"/>
+  <contributor>
+    <name>三水</name>
+    <uri>https://sanshui.findn.cn/</uri>
+  </contributor>
+  <entry>
+    <title type="text">Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</title>
+    <id>https://findn.cn/algorithm/carl/day4.html</id>
+    <link href="https://findn.cn/algorithm/carl/day4.html"/>
+    <updated>2022-11-29T09:19:15.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">本文目录</p>
+
+</div>
+<h2> 24.两两交换链表中的节点</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/swap-nodes-in-pairs/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。</p>
+
+]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">本文目录</p>
 
 </div>
@@ -64,17 +73,34 @@
 
 <h3> 思路</h3>
 <h3> python代码</h3>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Day1 数组 | LeetCode 704. 二分查找 27. 移除元素</title>
-      <link>https://findn.cn/algorithm/carl/day1.html</link>
-      <guid>https://findn.cn/algorithm/carl/day1.html</guid>
-      <source url="https://findn.cn/rss.xml">Day1 数组 | LeetCode 704. 二分查找 27. 移除元素</source>
-      <description>本文目录 [[toc]] 704. 二分查找 力扣题目链接 (https://leetcode.cn/problems/binary-search/) 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。 tab:active 示例 1：...</description>
-      <category>算法</category>
-      <pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </author>
+    <category term="算法"/>
+    <contributor>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </contributor>
+    <published>2022-11-29T00:00:00.000Z</published>
+    <rights>Copyright by 三水</rights>
+  </entry>
+  <entry>
+    <title type="text">Day1 数组 | LeetCode 704. 二分查找 27. 移除元素</title>
+    <id>https://findn.cn/algorithm/carl/day1.html</id>
+    <link href="https://findn.cn/algorithm/carl/day1.html"/>
+    <updated>2022-11-28T12:54:08.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">本文目录</p>
+
+</div>
+<h2> 704. 二分查找</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/binary-search/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。</p>]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">本文目录</p>
 
 </div>
@@ -154,17 +180,34 @@
 <p>暴力解法 - python调库</p>
 <div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>暴力解法 - 双循环</p>
 <div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>双指针法（快慢指针）</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</title>
-      <link>https://findn.cn/algorithm/carl/day2.html</link>
-      <guid>https://findn.cn/algorithm/carl/day2.html</guid>
-      <source url="https://findn.cn/rss.xml">Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</source>
-      <description>本文目录 [[toc]] 977.有序数组的平方 力扣题目链接 (https://leetcode.cn/problems/squares-of-a-sorted-array/) 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。 tab:active 示例 1： tab 示例 2： 思路...</description>
-      <category>算法</category>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </author>
+    <category term="算法"/>
+    <contributor>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </contributor>
+    <published>2022-11-16T00:00:00.000Z</published>
+    <rights>Copyright by 三水</rights>
+  </entry>
+  <entry>
+    <title type="text">Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</title>
+    <id>https://findn.cn/algorithm/carl/day2.html</id>
+    <link href="https://findn.cn/algorithm/carl/day2.html"/>
+    <updated>2022-11-28T12:54:08.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">本文目录</p>
+
+</div>
+<h2> 977.有序数组的平方</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/squares-of-a-sorted-array/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。</p>]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">本文目录</p>
 
 </div>
@@ -231,17 +274,36 @@
 <li>每条边的填充都要坚持循环一致的原则，左闭右开或者左开右闭。</li>
 </ul>
 <h3> python代码</h3>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表</title>
-      <link>https://findn.cn/algorithm/carl/day3.html</link>
-      <guid>https://findn.cn/algorithm/carl/day3.html</guid>
-      <source url="https://findn.cn/rss.xml">Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表</source>
-      <description>本文目录 [[toc]] 203.移除链表元素 力扣题目链接 (https://leetcode.cn/problems/remove-linked-list-elements/) 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。 tab:active 示例 1...</description>
-      <category>算法</category>
-      <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </author>
+    <category term="算法"/>
+    <contributor>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </contributor>
+    <published>2022-11-19T00:00:00.000Z</published>
+    <rights>Copyright by 三水</rights>
+  </entry>
+  <entry>
+    <title type="text">Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表</title>
+    <id>https://findn.cn/algorithm/carl/day3.html</id>
+    <link href="https://findn.cn/algorithm/carl/day3.html"/>
+    <updated>2022-11-29T09:19:15.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">本文目录</p>
+
+</div>
+<h2> 203.移除链表元素</h2>
+<blockquote>
+<p><a href="https://leetcode.cn/problems/remove-linked-list-elements/" target="_blank" rel="noopener noreferrer">力扣题目链接</a></p>
+</blockquote>
+<p>给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。</p>
+
+]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">本文目录</p>
 
 </div>
@@ -307,7 +369,17 @@ linkedList.get(1);            //返回3</p>
 <li>初始值 <code>pre=None</code>，<code>cur=head</code>，结束条件 <code>cur != None</code></li>
 </ul>
 <h3> python代码</h3>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-  </channel>
-</rss>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </author>
+    <category term="算法"/>
+    <contributor>
+      <name>三水</name>
+      <uri>https://sanshui.findn.cn/</uri>
+    </contributor>
+    <published>2022-11-22T00:00:00.000Z</published>
+    <rights>Copyright by 三水</rights>
+  </entry>
+</feed>
