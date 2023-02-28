@@ -22,7 +22,7 @@ export const zhSidebar = sidebar({
     },
   ],
 
-  "/web/": "structure",
+  // "/web/": "structure",
 
   "/cs/": "structure",
 

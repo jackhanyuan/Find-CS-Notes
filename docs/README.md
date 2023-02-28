@@ -16,10 +16,10 @@ features:
     icon: code
     details: 60天刷完代码随想录
     link: /algorithm/carl/README.md
-  - title: 前端
-    icon: html1
-    details: 三水的前端学习笔记
-    link: /web/README.md
+  # - title: 前端
+  #   icon: html1
+  #   details: 三水的前端学习笔记
+  #   link: /web/README.md
   - title: 计算机基础
     icon: jichu
     details: 计算机网络 操作系统 Linux基础
