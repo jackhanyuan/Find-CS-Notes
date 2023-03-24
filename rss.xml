@@ -6,16 +6,10 @@
     <link>https://findn.cn/</link>
     <description>三水的笔记 - 找到CS笔记的乐趣</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 15 Mar 2023 12:59:38 GMT</pubDate>
-    <lastBuildDate>Wed, 15 Mar 2023 12:59:38 GMT</lastBuildDate>
+    <pubDate>Fri, 24 Mar 2023 12:04:27 GMT</pubDate>
+    <lastBuildDate>Fri, 24 Mar 2023 12:04:27 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <copyright>Copyright by 三水</copyright>
-    <image>
-      <title>Find Notes</title>
-      <url>https://findn.cn/findnotes.svg</url>
-      <link>https://findn.cn/</link>
-    </image>
     <category>算法</category>
     <item>
       <title>Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</title>
