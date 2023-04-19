@@ -131,8 +131,12 @@ export default hopeTheme({
         "FontIcon",
       ],  
       rootComponents: {
-        backToTop: 300,
-      },  
+        backToTop: {
+          threshold: 100,
+          progress: true,
+        },
+      }, 
+
     }, 
 
     comment: {
