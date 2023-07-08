@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-hope-template",
-  "version": "2.0.0",
-  "description": "A project of vuepress-theme-hope",
+  "name": "findnotes",
+  "version": "1.0.0",
+  "description": "Sanshui's Notes - Finding the Joy of CS",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -11,10 +11,10 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/client": "2.0.0-beta.64",
     "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.62",
-    "vuepress-plugin-search-pro": "2.0.0-beta.219",
-    "vuepress-theme-hope": "2.0.0-beta.219"
+    "vuepress": "2.0.0-beta.64",
+    "vuepress-plugin-search-pro": "2.0.0-beta.230",
+    "vuepress-theme-hope": "2.0.0-beta.230"
   }
 }

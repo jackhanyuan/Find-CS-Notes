@@ -203,9 +203,7 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       gfm: true,
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       imgMark: false,
       demo: false,
       chart: false,
