@@ -124,10 +124,8 @@ export default hopeTheme({
     components: {
       components: [
         "Badge",
-        "AudioPlayer",
         "BiliBili",
-        "VideoPlayer",
-        "YouTube",
+        "VidStack",
         "FontIcon",
       ],  
       rootComponents: {
@@ -192,7 +190,7 @@ export default hopeTheme({
       tasklist: true,
       tabs: true,
       codetabs: true,
-      container: true,
+      hint: true,
       footnote: true,
       katex: true,
       mark: true,
