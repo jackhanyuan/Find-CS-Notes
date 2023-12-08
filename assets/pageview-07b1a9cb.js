@@ -1,1 +1,0 @@
-import{a5 as r}from"./app-1b5e62f6.js";const a=async()=>{try{const{pageviewCount:e}=await r(()=>import("./app-1b5e62f6.js").then(i=>i.a6),[]);return e({serverURL:"https://comment.findn.cn/"})}catch{console.error("@waline/client is not installed!");return}};export{a as updatePageview};
