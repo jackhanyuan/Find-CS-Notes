@@ -217,7 +217,6 @@ export default hopeTheme({
     pwa: {
       favicon: "/favicon.ico",
       cacheHTML: true,
-      cachePic: true,
       appendBase: true,
       themeColor: "#23a2a8",
       update: "available",
@@ -281,5 +280,25 @@ export default hopeTheme({
         ],
       },
     },
+
+    searchPro: {
+      indexContent: false,
+      autoSuggestions: false,
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.category,
+          formatter: {
+            "/": "分类：$content",
+          },
+        },
+        {
+          getter: (page) => page.frontmatter.tag,
+          formatter: {
+            "/": "标签：$content",
+          },
+        },
+      ],
+    },
+
   },
 });

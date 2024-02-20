@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro"
 import theme from "./theme.js";
 
 
@@ -45,25 +44,6 @@ export default defineUserConfig({
         s.parentNode.insertBefore(hm, s);
       })();`,
     ],
-  ],
-
-  plugins: [
-    searchProPlugin({
-      customFields: [
-        {
-          getter: (page) => page.frontmatter.category as string,
-          formatter: {
-            "/": "分类：$content",
-          },
-        },
-        {
-          getter: (page) => page.frontmatter.tag as string,
-          formatter: {
-            "/": "标签：$content",
-          },
-        },
-      ],
-    }),
   ],
 
 });
