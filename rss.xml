@@ -6,8 +6,8 @@
     <link>https://findn.cn/</link>
     <description>三水的笔记 - 找到CS笔记的乐趣</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 20 Feb 2024 16:53:24 GMT</pubDate>
-    <lastBuildDate>Tue, 20 Feb 2024 16:53:24 GMT</lastBuildDate>
+    <pubDate>Sat, 02 Mar 2024 11:58:44 GMT</pubDate>
+    <lastBuildDate>Sat, 02 Mar 2024 11:58:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>算法</category>
@@ -16,7 +16,7 @@
       <link>https://findn.cn/algorithm/carl/day4.html</link>
       <guid>https://findn.cn/algorithm/carl/day4.html</guid>
       <source url="https://findn.cn/rss.xml">Day4 链表 | LeetCode 24.两两交换链表中的节点 19.删除链表的倒数第N个节点 面试题 02.07. 链表相交 142.环形链表II</source>
-      <description> 本文目录 24.两两交换链表中的节点 力扣题目链接 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。 思路 python代码 19.删除链表的倒数第 N 个结点 力扣题目链接 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。 思路 python代码 ...</description>
+      <description>本文目录 24.两两交换链表中的节点 力扣题目链接 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。 思路 python代码 19.删除链表的倒数第 N 个结点 力扣题目链接 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。 思路 python代码 面...</description>
       <category>算法</category>
       <pubDate>Tue, 29 Nov 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -69,7 +69,7 @@
       <link>https://findn.cn/algorithm/carl/day1.html</link>
       <guid>https://findn.cn/algorithm/carl/day1.html</guid>
       <source url="https://findn.cn/rss.xml">Day1 数组 | LeetCode 704. 二分查找 27. 移除元素</source>
-      <description> 本文目录 704. 二分查找 力扣题目链接 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。 思路 使用二分法前提条件： 数组为有序数组 数组中无重复元素 边界问题 首先确定查找的时候是否包括数组左右两边的数字，通常分为以下2种： ...</description>
+      <description>本文目录 704. 二分查找 力扣题目链接 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。 思路 使用二分法前提条件： 数组为有序数组 数组中无重复元素 边界问题 首先确定查找的时候是否包括数组左右两边的数字，通常分为以下2种： 左...</description>
       <category>算法</category>
       <pubDate>Wed, 16 Nov 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -217,7 +217,7 @@
       <link>https://findn.cn/algorithm/carl/day2.html</link>
       <guid>https://findn.cn/algorithm/carl/day2.html</guid>
       <source url="https://findn.cn/rss.xml">Day2 数组 | LeetCode 977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</source>
-      <description> 本文目录 977.有序数组的平方 力扣题目链接 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。 思路 由于数组有序，负数平方之后可能成为最大数，所以平方后的最大值一定在数组的两端。 方法一：从中间向两边：找到正负分界点，然后分别向左向右遍历比较大小。 平方的特点是会把负数变成正数，所...</description>
+      <description>本文目录 977.有序数组的平方 力扣题目链接 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。 思路 由于数组有序，负数平方之后可能成为最大数，所以平方后的最大值一定在数组的两端。 方法一：从中间向两边：找到正负分界点，然后分别向左向右遍历比较大小。 平方的特点是会把负数变成正数，所以...</description>
       <category>算法</category>
       <pubDate>Sat, 19 Nov 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
@@ -409,7 +409,7 @@
       <link>https://findn.cn/algorithm/carl/day3.html</link>
       <guid>https://findn.cn/algorithm/carl/day3.html</guid>
       <source url="https://findn.cn/rss.xml">Day3 链表 | LeetCode 203.移除链表元素 707.设计链表 206.反转链表</source>
-      <description> 本文目录 203.移除链表元素 力扣题目链接 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。 思路 在单链表中 删除头结点 和 删除其他结点 的操作方式是不一样（删除其他结点时，都是通过该结点的前一个结点来删除该节点）。 设置虚拟头结点来统一删除操作 这样删...</description>
+      <description>本文目录 203.移除链表元素 力扣题目链接 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。 思路 在单链表中 删除头结点 和 删除其他结点 的操作方式是不一样（删除其他结点时，都是通过该结点的前一个结点来删除该节点）。 设置虚拟头结点来统一删除操作 这样删除...</description>
       <category>算法</category>
       <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div class="hint-container tip">
