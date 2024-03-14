@@ -57,11 +57,9 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: function(){var d = new Date(); return 'Copyright © 2022-' + String(d.getFullYear()) + ' 三水 | <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">陕ICP备2020013777号-1</a>'}(),
-
       displayFooter: true,
 
-      copyright: false,
+      copyright: function(){var d = new Date(); return 'Copyright © 2022-' + String(d.getFullYear()) + ' 三水 | <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">陕ICP备2020013777号-1</a>'}(),
 
       // page meta
       metaLocales: {
